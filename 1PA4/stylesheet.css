@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@property --color1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value:#FBF9F5;
+}
+@property --color2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value:#D96C4A;
+}
+@property --color3 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value:#b52c02;
+}
+
+* {
+    margin: 5px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color1);
+}
+
+header {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: groove 3px var(--color2);
+    font-family: "Gloock", serif;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;;
+    padding: 4px;
+}
+
+button{
+    display:block;
+    margin: 15px;
+    padding: 7px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color2);
+    border: none;
+    color: var(--color1);
+}
+
+a{
+    color: var(--color3);
+}
+
+li {
+    list-style-type: none;
+    display:inline;
+}
+
+img{
+    width: 300px;
+}
+
+h2{
+    color: var(--color3);
+}
+
+footer{
+    color: var(--color2);
+    font-family: "Poppins", sans-serif;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+}

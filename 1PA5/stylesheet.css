@@ -1,0 +1,136 @@
+@property --arena{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #F4EDE4;
+}
+
+@property --rojo{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #BD2800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    background-color: var(--arena);
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar-item{
+    color:#BD2800;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.navbar-item:hover {
+    color:#BD2800;
+    font-weight: bold;
+}
+
+header{
+    background-image: url("Imagenes/taza\ fondo.png");
+    background-size: cover;
+    color:beige;
+    padding-left: 5px;
+}
+
+h1{
+    color:beige;
+    padding-bottom: 10px;
+}
+
+header>div {
+    padding: 300px 300px 300px 100px;
+}
+
+.button{
+    padding: 10px;
+    background-color: #BD2800;
+    color:#F4EDE4;
+    display:inline-block;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: #F4EDE4;
+    color:black;
+    cursor: pointer;
+}
+
+#btn2:hover{
+    background-color: #deb887;
+}
+
+#section1{
+    background-color: #F4EDE4;
+}
+
+section,footer{
+    padding: 20px;
+}
+
+h2{
+    font-size: 34px;
+    color:#BD2800;
+    line-height: 40px;
+}
+
+#section1 p{
+    width: 95%;
+    line-height: 25px;
+    padding: 20px;
+    padding-left: 2px;
+}
+
+#sct1-text{
+    padding-left: 20px;
+}
+
+#section2{
+    text-align: center;
+}
+
+#section2 table{
+    margin: auto;
+    margin-top: 35px;
+    border: 2px solid burlywood;
+    border-collapse: collapse;
+}
+
+#section2 td,th{
+    padding: 10px;
+}
+
+#section2 th{
+    background-color: burlywood;
+    color: white;
+}
+
+#section2 td{
+    border-bottom: 1px dotted burlywood;
+}
+
+footer{
+    background-color: #F4EDE4;
+    color:#BD2800;
+}
+
+footer table {
+    width: 100%;
+}
+
+#Contacto{
+    text-align: right;
+}
+
+#redes{
+    margin-top: 15px;
+}

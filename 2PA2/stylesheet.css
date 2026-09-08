@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: rgb(253, 243, 243);
+}
+
+#contenedor {
+    border:2px solid rgb(255, 122, 144);
+    background-color: rgb(246, 218, 223);
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section {
+    margin: 40px;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.caja1 {
+    background-color: rgb(251, 183, 203);
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+
+}
+
+.caja2 {
+    background-color: rgb(241, 119, 174);
+    text-align: right;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+
+.caja3 {
+    background-color: rgb(247, 67, 157);
+    font-style: italic;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    left: 400px;
+    bottom: 140px;
+}

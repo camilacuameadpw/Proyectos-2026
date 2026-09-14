@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
+}
+
+.container div {
+border: 20px;
+background-color: rgb(198, 246, 246);
+color: blue;
+height: 20px;
+text-align: center;
+padding: 10px;
+}
+
+/* Num1 
+.container {
+   display:flex;
+   flex-direction: column;
+}
+*/
+
+/* Num2 
+.container {
+   display: flex;
+   flex-direction: row-reverse;
+}
+*/
+
+/* Num3 
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+*/
+
+/*
+.container div {
+   width: 300px;
+}
+*/
+
+/* Num4 
+.container {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+*/
+
+/*
+.container div {
+   width: 70px;
+}
+*/
+
+/* Num5 
+.container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+   align-items: center;
+}
+*/
+
+/* Num6
+.container {
+   display: flex;
+   height: 400px;
+   align-items: flex-end;
+}
+*/
+
+/* Num7
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   height: 400px;
+   align-content: space-around;
+}
+*/
+
+/*.container div {
+    width: 250px;
+}
+*/
+
+/* Num8
+#div1 { order: 7;}
+#div2 { order: 6;}
+#div3 { order: 5;}
+#div4 { order: 4;}
+#div5 { order: 3;}
+#div6 { order: 2;}
+#div7 { order: 1;}
+*/
+
+/* Num9
+#div1 { flex-grow: 1;}
+#div2 { flex-grow: 2;}
+#div3 { flex-grow: 1;}
+#div4 { flex-grow: 3;}
+#div5 { flex-grow: 1;}
+#div6 { flex-grow: 2;}
+#div7 { flex-grow: 4;}
+*/
+
+#div4 {
+    align-self: flex-end;
+}

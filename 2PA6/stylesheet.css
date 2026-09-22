@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(249, 212, 255);
+}
+
+h1,h2 {
+    color: black;
+    text-align: left;
+    font-size: larger;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.one-column,
+.two-columns,
+.three-columns,
+.four-columns,
+.two-rows,
+.three-rows,
+.four-rows,
+.five-rows,
+.six-rows,
+.large-grid,
+.small-grid,
+.mosaic-1,
+.mosaic-2,
+.mosaic-3,
+.mosaic-4,
+.mosaic-5,
+.mosaic-6,
+.mosaic-7,
+.mosaic-8 {
+    display: grid;
+    width: 420px;
+    height: 450px;
+    gap: 15px;
+}
+
+.new-screen div {
+    background-color:palevioletred;
+}
+
+.one-column div {
+    background-color: #FF340C;
+}
+
+.two-columns div {
+    background-color: #F03172;
+}
+
+.three-columns div {
+    background-color: #CAC307;
+}
+
+.four-columns div {
+    background-color: #273287;
+}
+
+.two-rows div{
+    background-color: #0084D4;
+}
+
+.three-rows div{
+    background-color: #E73CAA;
+}
+
+.four-rows div{
+    background-color: #FFC52C;
+}
+
+.five-rows div {
+    background-color: #5E183B;
+}
+
+.six-rows div {
+    background-color: #007B82;
+}
+
+.large-grid div {
+    background-color: #FF8C00;
+}
+
+.small-grid div{
+    background-color: darkorchid;
+}
+
+.mosaic-1 div {
+    background-color: #c3e36c;
+}
+
+.mosaic-2 div{
+    background-color: #E55C10;
+}
+
+.mosaic-3 div {
+    background-color: #493431;
+}
+
+.mosaic-4 div {
+    background-color: #BF64FF;
+}
+
+.mosaic-5 div {
+    background-color: #C99C7D;
+}
+
+.mosaic-6 div {
+    background-color: #4040FF;
+}
+
+.mosaic-7 div{
+    background-color: #004233;
+}
+
+.mosaic-8 div {
+    background-color:#FFA9A5;
+}
+
+.new-screen {
+    grid-template-columns: auto;
+}
+
+.one-column {
+    grid-template-columns: auto;
+}
+
+.two-columns {
+    grid-template-columns: auto auto;
+}
+
+.three-columns {
+    grid-template-columns: auto auto auto;
+}
+
+.four-columns {
+    grid-template-columns: auto auto auto auto;
+}
+
+.two-rows {
+    grid-template-rows: auto auto;
+}
+
+.three-rows {
+    grid-template-rows: auto auto auto;
+}
+
+.four-rows {
+    grid-template-rows: auto auto auto auto;
+}
+
+.five-rows {
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.six-rows {
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.large-grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.small-grid {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.mosaic-1 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.mosaic-1 .item1 {
+    grid-column: 1 / 3;
+}
+
+.mosaic-2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.mosaic-2 .item1 {
+    grid-column: 1 / 3;
+}
+
+.mosaic-2 .item2 {
+    grid-column: 1 / 2;
+}
+
+.mosaic-2 .item3 {
+    grid-column: 2 / 3;
+}
+
+.mosaic-3 {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.mosaic-3 .item1 {
+    grid-column: 1 / 4;
+}
+
+.mosaic-4 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.mosaic-4 .item3 {
+    grid-column: 1 / 3;
+}
+
+.mosaic-4 .item4 {
+    grid-column: 1 / 3;
+}
+
+.mosaic-5 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.mosaic-5 .item1 {
+    grid-row: 1 / 3;
+}
+
+.mosaic-6 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.mosaic-6 .item1 {
+    grid-row: 1 / 3;
+}
+
+.mosaic-7 {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.mosaic-7 .item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.mosaic-8 {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.mosaic-8 .item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}

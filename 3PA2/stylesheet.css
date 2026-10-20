@@ -1,0 +1,41 @@
+nav{
+    background-color: rgb(251, 243, 234);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.logo{
+    width: 36px;
+}
+
+.nav-icon{
+    width: 36px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+}
+
+.col-8{
+    grid-column: span 8;
+}
+
+.col-4{
+    grid-column: span 4;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: end;
+}
+
+#logo-text{
+    display: inline-block;
+}
+
+header{
+    background-image: url(Imagenes/foto\ inicio.jpg);
+    background-size: cover;
+}

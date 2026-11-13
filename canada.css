@@ -1,0 +1,308 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+}
+
+nav{
+  background-color: beige;
+  font-weight: bold;
+  padding: 15px;
+}
+
+
+.logo{
+  width: 210px;
+  padding: 20px;
+}
+
+
+.nav-icon{
+  width: 36px;
+}
+
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(12,1fr);
+  gap: 30px;
+}
+
+
+.col-8{
+  grid-column: span 8;
+}
+
+
+.col-4{
+  grid-column: span 4;
+}
+
+
+.nav-items{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+
+#ruta_pais {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 28px 56px;
+}
+
+
+#ruta_pais h1 {
+  font-size: 45px;
+  margin-bottom: 12px;
+  color: #7f9e04;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 18px;           
+  overflow: hidden; 
+  width: 100%;             
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(1fr);
+  border-radius: 18px;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 340px;
+}
+
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 230px;                
+  object-fit: cover;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 20px 24px;
+  gap: 10px; 
+}
+
+
+.container_titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 13px;
+  color: #444;
+  padding-top: 10px;
+}
+
+.card_pie {
+  display: flex;
+  flex-direction: column;   
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.precio {
+  font-size: 22px;
+  font-weight: 700;
+  color: #7f9e04;
+}
+
+.resenas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;     
+}
+
+.resenas img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.desde {
+  font-size: 13px;
+  color: #555;
+  font-weight: 400;
+}
+
+.marca img {
+  width: 130px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 16px;
+  padding: 40px 20px 24px;
+  background-color: #f5f5dc;
+}
+
+.footer_text p {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+}
+
+.columna h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.columna p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.inferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.marca img {
+  width: 130px;
+}
+
+.redes {
+  display: flex;
+  gap: 14px;
+}
+
+.redes img {
+  width: 28px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    width: 240px;
+  }
+
+  /* Título y rutas alineados con el logo: 20px (nav) + 20px (padding del logo) = 40px */
+  #ruta_pais {
+    max-width: none;
+    margin: 0;
+    padding: 80px 40px 72px;
+  }
+
+  #ruta_pais h1 {
+    font-size: 52px;
+  }
+
+  .total {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  /* 3 tarjetas por fila */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+    justify-items: stretch;
+  }
+
+  .cards a,
+  .cards > .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Solo la foto principal, no la estrella */
+  .card > img {
+    height: 230px;
+  }
+
+  .resenas img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Textos un poco más compactos para que quepan en 3 columnas */
+  .container {
+    padding: 18px 16px 20px;
+  }
+
+  .container_titulo h4 {
+    font-size: 25px;
+  }
+
+  .resenas {
+    font-size: 13px;
+  }
+
+  .precio {
+    font-size: 27px;
+  }
+
+  footer {
+    padding: 56px 20px 32px;
+  }
+}

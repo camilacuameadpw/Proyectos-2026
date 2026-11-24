@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boomerang</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Boomerang Agencia de Viaje experiencias nunca antes vistas">
+        <meta name="keywords" content="Viaje, Senderismo, Destinos, Experiencia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="global busqueda.css">
+        <link rel="stylesheet" href="tarjeta galeria detalle.css">
+        <link rel="stylesheet" href="Detalle Canada.css">
+        <link rel="stylesheet" href="Animacion boton 2.css">
+        <link rel="stylesheet" href="Barra Sidebar Menu.css">
+        <link rel="icon" type="image/x-icon" href="Imagenes/imagotipo.png">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="row">
+                    <div class="col-8">
+                        <a href="index.html">
+                        <img class="logo" src="Imagenes/logotipo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-4 menu">
+                        <a href="index.html#destinos">Destinos</a>
+                        <a href="index.html#testimonios">Testimonios</a>
+                        <a href="index.html#preguntas">Preguntas Frecuentes</a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html#destinos" onclick="closeNav()">Destinos</a>
+                        <a href="index.html#testimonios" onclick="closeNav()">Testimonios</a>
+                        <a href="index.html#preguntas" onclick="closeNav()">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="Imagenes/galeria big beehive 1.jpg" alt="Foto galeria paisaje 1">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="Imagenes/galeria big beehive 2.jpg" alt="Foto galeria personas 2">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="Imagenes/galeria big beehive 3.jpg" alt="Foto galeria paisaje 3">
+            </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <div class="contenido_ruta">
+        <div class="columna_texto">
+            <section class="viaje_intro">
+                <div class="reviews">
+                    <div class="review">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <span class="nota">5.0</span>
+                        <span class="nota">158 reseñas</span>
+                    </div>
+                    <span class="chip">Alberta,Canadá</span>
+                </div>
+                <h1 class="viaje_titulo">The Big Beehive</h1>
+                <p class="viaje_descripcion"> Esta ruta lo tiene todo: Senderos entre Bosques alpinos, el lago Mirror Lake, una parada en Lake Agnes Tea House y una vista increíble del lago Louise.</p>
+            </section>
+            <section class="viaje_stats" id="resumen">
+                <div class="stat">
+                    <strong>10 km</strong>
+                    <span>Distancia</span>
+                </div>
+                <div class="stat">
+                    <strong>Principiante</strong>
+                    <span>Nivel</span>
+                </div>
+                <div class="stat">
+                    <strong>12</strong>
+                    <span>Grupo máximo</span>
+                </div>
+            </section>
+            <section class="itinerario" id="itinerario">
+                <h2>Itinerario de Viaje</h2>
+                <div class="descripcion_pasos">
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">01</span>
+                            <span class="titulo">Subida a Mirror Lake</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Iniciamos la caminata bordeando las aguas turquesas de Lake Louise para internarnos en un bosque alpino de coníferas. Tras un ascenso constante y rodeado de aire puro, llegamos al apacible Mirror Lake</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">02</span>
+                            <span class="titulo">Descenso en Lake Agnes</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Continuamos subiendo por el sendero entre árboles hasta alcanzar el lago alpino Lake Agnes. Aquí hacemos una pausa estratégica para recargar energía, admirar el paisaje glaciar y visitar la histórica Lake Agnes Tea House.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">03</span>
+                            <span class="titulo">Los caracoles</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Rodeamos la orilla norte del lago para enfrentar el tramo más desafiante y emocionante de la ruta: una serie de ocho curvas cerradas en zigzag talladas en la pared de la montaña.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">04</span>
+                            <span class="titulo">El mirador</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Coronamos la cima de The Big Beehive a más de 2,200 metros de altitud. Desde su histórico refugio de madera disfrutarás de la vista aérea más icónica, tiempo ideal para comer y tomar fotografías.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">05</span>
+                            <span class="titulo">Regreso</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Iniciamos el descenso controlado de vuelta por los caracoles y los senderos del bosque, pasando nuevamente por Lake Agnes y Mirror Lake hasta regresar a la base del Lago Louise para el cierre de la expedición.</p>
+                        </div>
+                    </div>
+            </section>
+            <section class="incluido" id="incluye">
+                <div class="tarjeta_incluye">
+                    <h2>¿Qué incluye?</h2>
+                    <ul>
+                        <li>
+                            <img class="icono" src="Imagenes/guia.png" alt="Icono guia">
+                            <div>
+                                <h3>Guía de montaña certificado</h3>
+                                <p>Guía local certificado que lidera el grupo de principio a fin, brindando seguridad en montaña e información.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="icono" src="Imagenes/transporte.png" alt="Icono autobus">
+                            <div>
+                                <h3>Transporte</h3>
+                                <p>Pases de autobús garantizados hacia Lake Louise.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="icono" src="Imagenes/aplicacion.png" alt="Icono app">
+                            <div>
+                                <h3>Kit digital en la app</h3>
+                                <p>Mapas descargables de la ruta offline, recomendaciones de vestimenta/capas térmicas y registro de actividad.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+            <div class="reservacion_barra">
+                <h3 class="reserva_nombre solo_escritorio"> The Big Beehive</h3>
+                <div class="reserva_fecha solo_escritorio">
+                    <img src="Imagenes/calendario.png" alt="Icono de calendario">
+                    <span>26 de mayo, 2027</span>
+                </div>
+                <div class="reserva_precio">
+                    <span class="reserva_dia">DESDE</span>
+                    <strong>$1,890 MXN</strong>
+                    <span class="reserva_persona solo_escritorio">por persona</span>
+                </div>
+                <a href="Reservacion Canada.html"> 
+                <button class="boton2">RESERVA TU LUGAR</button>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_text">
+                <p>Cambia la Región</p>
+                <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Global" name="Global">
+                </form>
+            </div>
+        <div class="columnas">
+            <div class="columna">
+                <h4>Compañía</h4>
+                <p>Sobre Nosotros</p>
+            </div>
+            <div class="columna">
+                <h4>Reservas</h4>
+                <p>Destinos</p>
+                <p>Viaje Seguro</p>
+            </div>
+            <div class="columna">
+                <h4>Contacto</h4>
+                <p>Chat activo</p>
+                <p>FAQ</p>
+                <p>Testimonios</p>
+            </div>
+        </div>
+        <div class="inferior">
+            <div class="marca">
+                <img src="Imagenes/logotipo.png" alt="logotipo">
+            </div>
+            <div class="redes">
+                <a href=https://www.whatsapp.com/ target="_blank"><img src="Imagenes/whatsapp.png" alt="icono whatsapp"></a>
+                <a href=https://www.instagram.com/ target="_blank"><img src="Imagenes/instagram.png" alt="icono instagram"></a>
+                <a href=https://www.facebook.com/ target="_blank"><img src="Imagenes/facebook.png" alt="icono facebook"></a>
+                <a href=https://www.youtube.com/ target="_blank"><img src="Imagenes/youtube.png" alt="icono youtube"></a>
+            </div>
+        </div>
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "50%";
+                document.querySelector(".sidenav span").style.display = "none";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.querySelector(".sidenav span").style.display = "";
+            }
+        </script>
+    </body>
+</html>

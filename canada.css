@@ -1,0 +1,449 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-8{
+  grid-column: span 8;
+}
+
+.col-4{
+  grid-column: span 4;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: beige;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+.logo{
+  width: 150px;
+  padding: 10px;
+}
+
+.nav-icon{
+  width: 32px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(12,1fr);
+  gap: 15px;
+}
+
+.col-8{
+  grid-column: span 8;
+}
+
+.col-4{
+  grid-column: span 4;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+/* ===== ENCABEZADO DE CANADÁ ===== */
+#ruta_pais {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.zona_arriba {
+  background-color: #fcfaf3;
+  padding: 28px 20px 36px;
+}
+
+#ruta_pais h1 {
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #7f9e04;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  object-position: 50% 60%;
+}
+
+/* Texto e imagen: uno debajo del otro */
+.intro_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.intro_texto {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+.intro {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.total {
+  display: inline-block;
+  margin: 32px 0 20px 20px;
+  background-color: #cece0f;
+  color: #034903;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 500px;
+}
+
+/* Tarjetas: una debajo de otra */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-top: 0px;
+  padding: 0 20px 48px;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-self: stretch;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.card_link {
+  display: flex;
+  color: inherit;          
+  text-decoration: none;  
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 22px 22px 0 0;
+}
+
+.card .container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px 20px 28px;
+}
+
+.container_titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.container_titulo h4 {
+  font-size: 22px;
+  color: #034903;
+}
+
+.resenas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #fcfaf3;
+  border: 1px solid #dddbd4;
+  border-radius: 500px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Duración y nivel */
+.datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.datos span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #fcfaf3;
+  color: #034903;
+  border: 1px solid #dddbd4;
+  border-radius: 500px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Tamaño de la estrella y de los iconos (van después de ".card img" para que le ganen) */
+.resenas img {
+  width: 16px;
+  height: 16px;
+}
+
+.datos img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Precio */
+.card_pie {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.desde {
+  font-size: 13px;
+  color: #313030;
+  font-weight: 400;
+}
+
+.precio {
+  font-size: 28px;
+  font-weight: 700;
+  color: #7f9e04;
+  margin-top: 6px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 16px;
+  padding: 40px 20px 24px;
+  background-color: #f5f5dc;
+}
+
+.footer_text p {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+}
+
+.columna h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.columna p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.inferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.marca img {
+  width: 130px;
+}
+
+.redes {
+  display: flex;
+  gap: 14px;
+}
+
+.redes img {
+  width: 28px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-right: 40px;
+}
+
+.menu a,
+.menu a:visited {
+  color: #4b5320;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #8a9a2f;
+}
+
+body {
+  padding-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+
+  /* Menú */
+  nav{
+    padding: 15px;
+  }
+
+  .logo{
+    width: 210px;
+    padding: 20px;
+  }
+
+  .nav-icon{
+    width: 36px;
+  }
+
+  .row{
+    gap: 30px;
+  }
+
+  .nav-items{
+    padding: 20px;
+  }
+
+  /* Encabezado */
+  .zona_arriba {
+    padding: 48px 35px 56px;
+  }
+
+  #ruta_pais h1 {
+    font-size: 50px;
+    margin-bottom: 28px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 480px;
+    border-radius: 24px;
+  }
+
+  /* Texto a la izquierda, imagen a la derecha */
+  .intro_info {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 28px;
+  }
+
+  .intro_texto {
+    max-width: 700px;
+    margin-top: 28px;
+    font-size: 17px;
+  }
+
+  .intro {
+    width: 550px;
+    height: 250px;
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .total {
+    margin: 50px 0 24px 35px;
+    font-size: 16px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 35px 72px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  /* La estrella y los iconos conservan su tamaño pequeño */
+  .resenas img {
+    height: 16px;
+  }
+
+  .datos img {
+    height: 20px;
+  }
+
+  .card .container {
+    padding: 28px 22px 32px;
+  }
+
+  .container_titulo h4 {
+    font-size: 25px;
+  }
+
+  .datos {
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  .precio {
+    font-size: 30px;
+  }
+
+  /* Footer */
+  body footer {
+    padding: 48px 35px 32px;
+  }
+}

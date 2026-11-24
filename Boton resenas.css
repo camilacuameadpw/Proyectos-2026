@@ -1,0 +1,35 @@
+.round a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.round:hover {
+  background-color: #878686;
+  color: black;
+}
+
+.circulo_anterior {
+  background-color: #dcdbdb;
+  color: black;
+}
+
+.circulo_siguiente {
+  background-color: #aeae04;
+  color: white;
+}
+
+.round img {
+  width: 22px;
+  height: 22px;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}

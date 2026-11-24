@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boomerang</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Boomerang Agencia de Viaje experiencias nunca antes vistas">
+        <meta name="keywords" content="Viaje, Senderismo, Destinos, Experiencia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="Fade in Destinos.css">
+        <link rel="stylesheet" href="Animacion boton 2.css">
+        <link rel="stylesheet" href="Boton resenas.css">
+        <link rel="stylesheet" href="barra busqueda.css">
+        <link rel="stylesheet" href="global busqueda.css">
+        <link rel="stylesheet" href="Barra Sidebar Menu.css">
+        <link rel="icon" type="image/x-icon" href="Imagenes/imagotipo.png">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="row">
+                    <div class="col-8">
+                        <img class="logo" src="Imagenes/logotipo.png" alt="Logo">
+                    </div>
+                    <div class="col-4 menu">
+                        <a href="#destinos">Destinos</a>
+                        <a href="#testimonios">Testimonios</a>
+                        <a href="#preguntas">Preguntas Frecuentes</a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#destinos" onclick="closeNav()">Destinos</a>
+                        <a href="#testimonios" onclick="closeNav()">Testimonios</a>
+                        <a href="#preguntas" onclick="closeNav()">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <header>
+            <div class="header_text">
+                <div>
+                    <p>Viajes de Senderismo</p>
+                    <h1>Empieza tu viaje con nosotros</h1>
+                </div>
+            <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Encuentra tu Aventura.." name="search2">
+                <button type="submit">
+                    <img src="Imagenes/lupa.png" alt="Buscar">
+                </button>
+            </form>
+            </div>
+        </header>
+        <section id="section1"> 
+            <h2>Vive la Nueva Experiencia</h2>
+            <img src="Imagenes/conocenos3.jpg" alt="Personas en senderismo">
+            <div class="informacion">
+                <h3>Nos apasiona compartir la alegría de viajar</h3>
+                <p>Para nosotros, el senderismo va más allá de recorrer un camino; se trata de descubrir y conectar con lugares únicos, desconectarnos de la rutina diaria y crear recuerdos significativos en el camino. Nos motiva guiarte a través de paisajes imponentes con toda la pasión y el profesionalismo que te mereces.</p>
+                <h3 class="subtitulo">Explora el mundo sin complicaciones</h3>
+                <p>Olvídate de la preocupación de trazar mapas, gestionar permisos o coordinar transportes difíciles. Diseñamos experiencias totalmente estructuradas con guías expertos para que camines y conectes con la comunidad senderista con absoluta tranquilidad y total seguridad en cada paso del trayecto.</p>
+            </div>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <div class="icono">
+                        <img src="Imagenes/icono garantia.png" alt="Garantía Icono">
+                    </div>
+                    <h4>Garantía de Cambio de Viaje</h4>
+                    <p>Sabemos que los planes cambian. Si surge algún imprevisto, puedes reprogramar la fecha de tu ruta o transferir tu saldo a cualquier otra aventura de nuestro catálogo sin complicaciones.</p>
+                </article>
+                <article class="tarjeta_rellena">
+                    <div class="icono">
+                        <img src="Imagenes/icono seguridad.png" alt="Seguridad Icono">
+                    </div>
+                    <h4>Tu seguridad es Primero</h4>
+                    <p>Todos nuestros guías cuentan con certificación internacional en primeros auxilios en áreas remotas (WFR), equipamiento médico completo y sistemas de comunicación satelital en todo el recorrido.</p>
+                </article>
+                <article class="tarjeta">
+                    <div class="icono">
+                        <img src="Imagenes/icono comunidad.png" alt="Comunidad Icono">
+                    </div>
+                    <h4>Personas Reales, Apoyo Real</h4>
+                    <p>Olvídate de los chatbots y respuestas automatizadas. Nuestro equipo está disponible directamente para resolver tus dudas sobre equipo, condición física o logística antes y durante tu viaje.</p>
+                </article>
+            </div>
+        </section>
+        <section class="destinos" id="destinos">
+            <h2>Destinos</h2>
+            <div class="carrusel">
+                <div class="container">
+            <a href="canada.html">
+                <img src="Imagenes/canada.jpg" alt="Destino Canada" class="image">
+                <div class="overlay">
+                    <div class="text">Canadá</div>
+                </div>
+            </a>
+            </div>
+                <div class="container">
+            <a href="Mexico.html">
+                    <img src="Imagenes/Mexico.png" alt="Destino Mexico" class="image">
+                    <div class="overlay">
+                        <div class="text">México</div>
+                    </div>
+            </a>
+                </div>
+                <div class="container">
+            <a href="Japon.html">
+                    <img src="Imagenes/japon.jpg" alt="Destino Japon" class="image">
+                    <div class="overlay">
+                        <div class="text">Japón</div>
+                    </div>
+            </a>
+                </div>
+            <div class="container">
+                <img src="Imagenes/extra destino 1.jpg" alt="Destino Extra 1" class="image">
+                <div class="overlay">
+                    <div class="text">Muy Pronto</div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="Imagenes/extra destino 3.jpg" alt="Destino Extra 2" class="image">
+                <div class="overlay">
+                    <div class="text">Muy Pronto</div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="Imagenes/extra destino 2.jpg" alt="Destino Extra 3" class="image">
+                <div class="overlay">
+                    <div class="text">Muy Pronto</div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="Imagenes/extra destino 4.jpg" alt="Destino Extra 4" class="image">
+                <div class="overlay">
+                    <div class="text">Muy Pronto</div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section id="testimonios">
+            <img class="foto_seccion" src="Imagenes/mujer testigo.jpg" alt="Viajera senderismo">
+            <p class="etiqueta_text2"> Historias de Viajeros sin Filtros</p>
+            <div class="calificaciones">
+                <div class="calificacion">
+                    <img src="Imagenes/circulo.png" alt="Icono Circulo resena">
+                    <img src="Imagenes/circulo.png" alt="Icono Circulo resena">
+                    <img src="Imagenes/circulo.png" alt="Icono Circulo resena">
+                    <img src="Imagenes/circulo.png" alt="Icono Circulo resena">
+                    <span>121 reseñas</span>
+                </div>
+                <div class="calificacion">
+                    <div class="estrellas">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella calificacion">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella calificacion">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella calificacion">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella calificacion">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella calificacion">
+                </div>
+                    <span>5 calificación</span>
+                </div>
+            </div>
+            <article class="resena">
+                <h3>Una ruta inolvidable y súper bien organizada</h3>
+                <p>Teníamos algo de duda porque era nuestra primera vez haciendo senderismo en grupo, pero la experiencia superó nuestras expectativas. Desde el primer momento la comunicación fue superclara con todo el equipo. Durante el recorrido, los guías estuvieron al pendiente de cada detalle. Sin duda regresaremos para probar una ruta de mayor dificultad la próxima temporada.</p>
+                <p class="autor">Esmeralda Hernández</p>
+                <span> 23 Marzo,2025</span>
+                <div class="estrellas2">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella resena">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella resena">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella resena">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella resena">
+                    <img src="Imagenes/estrella.png" alt="Icono estrella resena">
+                </div>
+            </article>
+            <div class="controles">
+                <a href="#" class="round circulo_anterior">
+                    <img src="Imagenes/flecha izquierda.png" alt="Anterior">
+                </a>
+                <a href="#" class="round circulo_siguiente">
+                    <img src="Imagenes/flecha derecha.png" alt="Siguiente">
+                </a>
+            </div>
+        </section>
+        <section id="preguntas">
+            <img class="foto_seccion" src="Imagenes/preguntas frecuentes.jpg" alt="Paisajes">
+            <h2>Preguntas Frecuentes</h2>
+            <p>No te quedes con ninguna duda, asegura tu aventura</p>
+            <div class="listapreguntas">
+                <div class="item">
+                    <button class="accordion">¿Qué nivel de condición física necesito para participar?
+                    <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                    </button>
+                    <div class="panel">
+                        <p>Contamos con rutas diseñadas para todo tipo de exploradores. Cada experiencia indica claramente su nivel de exigencia (Principiante, Intermedio o Avanzado), distancia y desnivel para que elijas una caminata acorde a tu ritmo y experiencia previa en montaña.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <button class="accordion">¿Qué tipo de viaje es el adecuado para mí?
+                    <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                    </button>
+                    <div class="panel">
+                        <p>Si, buscas una escapada ligera para disfrutar paisajes sin prisas, te recomendamos nuestras rutas de Nivel Principiante de medio día. Si ya tienes experiencia haciendo senderismo y buscas un reto físico con vistas de alta montaña, las rutas de Nivel Intermedio o Avanzado de jornada completa o acampada son ideales para ti.</p>
+                    </div>
+                </div>
+                 <div class="item">
+                    <button class="accordion">¿Están incluidos los vuelos y el aeropuerto en el precio del viaje?
+                    <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                    </button>
+                    <div class="panel">
+                        <p>No, nuestros precios cubren exclusivamente la experiencia terrestre de senderismo (guía certificado, accesos a parques, equipo de apoyo y transporte local hacia el inicio del sendero según la ruta). De esta forma tienes total libertad para elegir tus vuelos.</p>
+                    </div>
+                </div>
+                 <div class="item">
+                    <button class="accordion">¿Necesito contratar un seguro de viaje antes de viajar?
+                    <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                    </button>
+                    <div class="panel">
+                        <p>Sí, recomendamos ampliamente contar con un seguro de viaje con cobertura para actividades al aire libre o senderismo antes de iniciar tu aventura, especialmente en nuestras expediciones internacionales o de alta montaña.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="boton2">Ver más Preguntas</button>            
+        </section>
+        <section id="calltoaction">
+            <h2>¡Quiero Viajar ya!</h2>
+            <button class="boton2">Ver disponibilidad</button>
+        </section>
+        <footer>
+            <div class="footer_text">
+                <p>Cambia la Región</p>
+                <form class="example" action="/action_page.php">
+                    <input type="text" placeholder="Global" name="Global">
+            </div>
+        <div class="columnas">
+            <div class="columna">
+                <h4>Compañía</h4>
+                <p>Sobre Nosotros</p>
+            </div>
+            <div class="columna">
+                <h4>Reservas</h4>
+                <p>Destinos</p>
+                <p>Viaje Seguro</p>
+            </div>
+            <div class="columna">
+                <h4>Contacto</h4>
+                <p>Chat activo</p>
+                <p>FAQ</p>
+                <p>Testimonios</p>
+            </div>
+        </div>
+        <div class="inferior">
+            <div class="marca">
+                <img src="Imagenes/logotipo.png" alt="logotipo">
+            </div>
+            <div class="redes">
+                <a href=https://www.whatsapp.com/ target="_blank"><img src="Imagenes/whatsapp.png" alt="icono whatsapp"></a>
+                <a href=https://www.instagram.com/ target="_blank"><img src="Imagenes/instagram.png" alt="icono instagram"></a>
+                <a href=https://www.facebook.com/ target="_blank"><img src="Imagenes/facebook.png" alt="icono facebook"></a>
+                <a href=https://www.youtube.com/ target="_blank"><img src="Imagenes/youtube.png" alt="icono youtube"></a>
+            </div>
+        </div>
+        </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+            document.querySelector(".sidenav span").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".sidenav span").style.display = "";
+        }
+        </script>
+    </body>
+</html>

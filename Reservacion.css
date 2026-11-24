@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  padding-top: 50px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 8px;
+}
+
+.reserva_encabezado {
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+}
+
+.reserva_encabezado p {
+  color: #323131;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.tarjeta {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto 40px auto;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+}
+
+.tarjeta hr {
+  border: none;
+  border-top: 1px solid #cecccc;
+  margin: 20px 0;
+}
+
+.tarjeta h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.experiencia {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.experiencia > img {
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ubicacion {
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+.nivel {
+  display: inline-block;
+  background-color: #cece0f;
+  color: #034903;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recuadro_fecha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.recuadro_fecha img {
+  width: 25px;
+  height: 25px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #555555;
+}
+
+.fila strong {
+  color: #000000;
+}
+
+.total {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.total strong {
+  color: #899b36;
+  font-size: 26px;
+}
+
+.aviso {
+  margin-top: 25px;
+}
+
+.aviso p {
+  color: #555555;
+  font-size: 14px;
+}
+
+.reserva_boton .boton2 {
+  width: 100%;
+  margin-top: 45px;
+}
+
+
+
+
+
+

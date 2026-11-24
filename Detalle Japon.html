@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boomerang</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Boomerang Agencia de Viaje experiencias nunca antes vistas">
+        <meta name="keywords" content="Viaje, Senderismo, Destinos, Experiencia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="global busqueda.css">
+        <link rel="stylesheet" href="tarjeta galeria detalle.css">
+        <link rel="stylesheet" href="Detalle Mexico.css">
+        <link rel="stylesheet" href="Animacion boton 2.css">
+        <link rel="stylesheet" href="Barra Sidebar Menu.css">
+        <link rel="icon" type="image/x-icon" href="Imagenes/imagotipo.png">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="row">
+                    <div class="col-8">
+                        <a href="index.html">
+                        <img class="logo" src="Imagenes/logotipo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-4 menu">
+                        <a href="index.html#destinos">Destinos</a>
+                        <a href="index.html#testimonios">Testimonios</a>
+                        <a href="index.html#preguntas">Preguntas Frecuentes</a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html#destinos" onclick="closeNav()">Destinos</a>
+                        <a href="index.html#testimonios" onclick="closeNav()">Testimonios</a>
+                        <a href="index.html#preguntas" onclick="closeNav()">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="Imagenes/entrada kumano galeria.jpg" alt="Foto entrada japon galeria 1">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="Imagenes/hiking kamodo japon.jpg" alt="Foto personas hiking japon galeria 2">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="Imagenes/kumano japon.jpg" alt="Foto lugar kumano galeria 3">
+            </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <div class="contenido_ruta">
+        <div class="columna_texto">
+            <section class="viaje_intro">
+                <div class="reviews">
+                    <div class="review">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <img src="Imagenes/estrella.png" alt="estrella calificacion">
+                        <span class="nota">3.7</span>
+                        <span class="nota">112 reseñas</span>
+                    </div>
+                    <span class="chip">Península de Kii</span>
+                </div>
+                <h1 class="viaje_titulo">Kumano Kodo</h1>
+                <p class="viaje_descripcion">Un antiguo camino de peregrinación en la península de Kii. Recorre bosques milenarios de cedros y senderos empedrados hasta llegar a santuarios sagrados ocultos en la montaña.</p>
+            </section>
+            <section class="viaje_stats" id="resumen">
+                <div class="stat">
+                    <strong>9 km</strong>
+                    <span>Distancia</span>
+                </div>
+                <div class="stat">
+                    <strong>Intermedio</strong>
+                    <span>Nivel</span>
+                </div>
+                <div class="stat">
+                    <strong>8</strong>
+                    <span>Grupo máximo</span>
+                </div>
+            </section>
+            <section class="itinerario" id="itinerario">
+                <h2>Itinerario de Viaje</h2>
+                <div class="descripcion_pasos">
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">01</span>
+                            <span class="titulo">Inicio en Hosshinmon-oji</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Comenzamos la ruta cruzando el icónico portal torii que marca la entrada al territorio sagrado de Hongu. Tras una breve introducción cultural y revisión de equipo, nos adentramos en una tranquila vereda rodeada de bosques de cedros y cipreses japoneses.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">02</span>
+                            <span class="titulo">Aldeas rurales y terrazas de té</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>El sendero desciende suavemente atravesando pequeñas aldeas tradicionales de montaña y campos de cultivo de té verde. Aquí hacemos una breve pausa para disfrutar del entorno rural, admirar la arquitectura de madera y sellar nuestra credencial de peregrino en los pequeños santuarios oji del camino.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">03</span>
+                            <span class="titulo">Senderos empedrados del bosque</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Nos internamos nuevamente en la espesura del bosque milenario por antiguos escalones de piedra cubiertos de musgo. Es el tramo más envolvente y silencioso de la caminata, ideal para conectar con la naturaleza y escuchar los arroyos de la montaña.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">04</span>
+                            <span class="titulo">Mirador Fushiogami-oji</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Llegamos al histórico punto panorámico desde donde los antiguos peregrinos vislumbraban por primera vez su destino final. Hacemos una parada estratégica para descansar, tomar fotografías del valle y disfrutar de nuestro bento tradicional japonés.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <button class="accordion">
+                            <span class="num_paso">05</span>
+                            <span class="titulo">Llegada a Kumano Hongu Taisha y Oyunohara</span>
+                            <img src="Imagenes/flecha corta.png" alt="flecha para mas info">
+                        </button>
+                        <div class="panel">
+                            <p>Culminamos la travesía descendiendo hacia el imponente santuario Kumano Hongu Taisha, famoso por su arquitectura de techos de corteza de ciprés, y finalizamos frente a Oyunohara, el portal torii más grande del mundo rodeado de campos de arroz.</p>
+                        </div>
+                    </div>
+            </section>
+            <section class="incluido" id="incluye">
+                <div class="tarjeta_incluye">
+                    <h2>¿Qué incluye?</h2>
+                    <ul>
+                        <li>
+                            <img class="icono" src="Imagenes/guia.png" alt="Icono guia">
+                            <div>
+                                <h3>Guía local certificado</h3>
+                                <p>Acompañamiento experto bilingüe durante todo el recorrido con interpretación histórica, espiritual y cultural de los santuarios oji.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="icono" src="Imagenes/transporte.png" alt="Icono transporte">
+                            <div>
+                                <h3>Transporte local</h3>
+                                <p>Traslados en autobús local desde la estación Kii-Tanabe hacia el inicio del sendero en Hosshinmon-oji y regreso desde Hongu Taisha.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="icono" src="Imagenes/aplicacion.png" alt="Icono app">
+                            <div>
+                                <h3>Kit digital en la app</h3>
+                                <p>Mapa offline de la ruta, guía de etiqueta en santuarios, recomendaciones de calzado/vestimenta y seguimiento de altimetría.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+            <div class="reservacion_barra">
+                <h3 class="reserva_nombre solo_escritorio">Kumano Kodo</h3>
+                <div class="reserva_fecha solo_escritorio">
+                    <img src="Imagenes/calendario.png" alt="Icono de calendario">
+                    <span>03 de septiembre, 2027</span>
+                </div>
+                <div class="reserva_precio">
+                    <span class="reserva_dia">DESDE</span>
+                    <strong>$7,152 MXN</strong>
+                    <span class="reserva_persona solo_escritorio">por persona</span>
+                </div>
+                <a href="Reservacion Japon.html"> 
+                <button class="boton2">RESERVA TU LUGAR</button>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_text">
+                <p>Cambia la Región</p>
+                <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Global" name="Global">
+                </form>
+            </div>
+        <div class="columnas">
+            <div class="columna">
+                <h4>Compañía</h4>
+                <p>Sobre Nosotros</p>
+            </div>
+            <div class="columna">
+                <h4>Reservas</h4>
+                <p>Destinos</p>
+                <p>Viaje Seguro</p>
+            </div>
+            <div class="columna">
+                <h4>Contacto</h4>
+                <p>Chat activo</p>
+                <p>FAQ</p>
+                <p>Testimonios</p>
+            </div>
+        </div>
+        <div class="inferior">
+            <div class="marca">
+                <img src="Imagenes/logotipo.png" alt="logotipo">
+            </div>
+            <div class="redes">
+                <a href=https://www.whatsapp.com/ target="_blank"><img src="Imagenes/whatsapp.png" alt="icono whatsapp"></a>
+                <a href=https://www.instagram.com/ target="_blank"><img src="Imagenes/instagram.png" alt="icono instagram"></a>
+                <a href=https://www.facebook.com/ target="_blank"><img src="Imagenes/facebook.png" alt="icono facebook"></a>
+                <a href=https://www.youtube.com/ target="_blank"><img src="Imagenes/youtube.png" alt="icono youtube"></a>
+            </div>
+        </div>
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "50%";
+                document.querySelector(".sidenav span").style.display = "none";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.querySelector(".sidenav span").style.display = "";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boomerang</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Boomerang Agencia de Viaje experiencias nunca antes vistas">
+        <meta name="keywords" content="Viaje, Senderismo, Destinos, Experiencia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Pago.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="Imagenes/imagotipo.png">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="row">
+                    <div class="col-8">
+                        <a href="Reservacion Mexico.html">
+                        <img class="logo" src="Imagenes/logotipo.png" alt="Logo">
+                    </div>
+                    </a>
+                </div>
+            </nav>
+        </main>
+        <div class="row">
+            <div class="col-75">
+                <div class="resumen_pago">
+                    <h2 class="resumen_titulo">PAGO PENDIENTE</h2>
+                    <p class="resumen_monto">$11,344 MXN</p>
+                    <p class="resumen_texto">Pago de tu nueva aventura</p>
+                </div>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Dirección de Facturación</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                                <input type="text" id="fname" name="firstname">
+                                <label for="email"><i class="fa fa-envelope"></i>Correo Electrónico</label>
+                                <input type="text" id="email" name="email">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
+                                <input type="text" id="adr" name="address">
+                                <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                                <input type="text" id="city" name="city">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">Estado</label>
+                                        <input type="text" id="state" name="state">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Código Postal</label>
+                                        <input type="text" id="zip" name="zip" placeholder="0000">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <h3>Pago</h3>
+                                <label for="fname">Tarjetas Aceptadas</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Nombre en la Tarjeta</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Como aparece en la tarjeta">
+                                <label for="ccnum">Número de Tarjeta</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="0000 0000 0000 0000">
+                                <label for="expmonth">Mes de Vencimiento</label>
+                                <input type="text" id="expmonth" name="expmonth">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Año de Vencimiento</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="0000">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Acepto los términos y políticas de reservación.
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Acepto y me comprometo a respetar los valores de la comunidad.
+                        </label>
+                        <input type="submit" value="Pagar" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

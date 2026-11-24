@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #fcfaf3;
+}
+
+.logo {
+  width: 150px;
+  display: block;   /* CAMBIO: nuevo, para poder centrarlo */
+  margin: 0 auto 25px;  /* CAMBIO: nuevo, centrado + espacio debajo del logo */
+}
+
+nav .row {
+  margin: 0;
+  justify-content: center;
+}
+
+.resumen_pago {
+  background-color: #dce9ae;
+  text-align: center;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+.resumen_titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resumen_monto {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+.resumen_texto {
+  font-size: 17px;
+  color: #4e4d4d;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+label i.fa {
+  margin-right: 8px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+body > .row {
+  margin: 0;
+  justify-content: center;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  max-width: 900px;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+/* separación entre Billing Address y Payment */
+form > .row {
+  margin: 0 -25px;
+}
+
+form > .row > .col-50 {
+  padding: 0 25px;
+}
+
+/* separación entre State/Zip y Exp Year/CVV */
+.col-50 .row {
+  margin: 0 -10px;
+}
+
+.col-50 .col-50 {
+  padding: 0 10px;
+}
+
+.container {
+  background-color: #f3f3f3;
+  padding: 25px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* espacio antes del checkbox */
+form > label {
+  margin-top: 10px;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #6b8a0d;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #034903;
+}
+
+@media (max-width: 700px) {
+
+  /* Menos espacio a los lados para aprovechar la pantalla */
+  body {
+    padding: 12px;
+  }
+
+  /* Logo un poco más chico */
+  .logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  /* Caja de resumen de pago más compacta */
+  .resumen-pago {
+    padding: 20px 15px;
+    margin-bottom: 15px;
+  }
+
+  .resumen-titulo {
+    font-size: 18px;
+  }
+
+  .resumen-monto {
+    font-size: 26px;
+  }
+
+  .resumen-texto {
+    font-size: 15px;
+  }
+
+  /* Menos padding dentro de la caja gris */
+  .container {
+    padding: 20px 15px;
+  }
+
+  /* Billing Address y Payment se apilan una arriba de la otra con separación */
+  form > .row > .col-50 {
+    flex: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* Títulos más pequeños */
+  h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+
+  /* Inputs con letra de 16px (evita que el iPhone haga zoom al escribir) */
+  input[type=text] {
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+
+  /* Íconos de tarjetas un poco más chicos */
+  .icon-container {
+    font-size: 22px;
+  }
+
+  /* Checkboxes: texto más cómodo de leer cuando se parte en dos líneas */
+  form > label {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 12px;
+  }
+
+  /* Botón de pago más alto para que sea fácil de tocar */
+  .btn {
+    padding: 16px;
+    font-size: 17px;
+  }
+}
